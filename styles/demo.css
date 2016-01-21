@@ -39,7 +39,7 @@ h1 {
   line-height: 30px;
   text-align: center;
   margin: 0;
-  padding: 30px 15px 60px;
+  padding: 30px 30px 60px;
   position: relative;
 }
 
@@ -70,7 +70,7 @@ h1.check:after {
 form {
   margin: 0 auto;
   max-width: 500px;
-  padding: 0 15px 15px;
+  padding: 0 30px 30px;
 }
 
 fieldset {
