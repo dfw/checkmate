@@ -1,0 +1,108 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: 'checkmate';
+  src: url('../fonts/checkmate.eot?91779125');
+  src: url('../fonts/checkmate.eot?91779125#iefix') format('embedded-opentype'),
+       url('../fonts/checkmate.woff?91779125') format('woff'),
+       url('../fonts/checkmate.ttf?91779125') format('truetype'),
+       url('../fonts/checkmate.svg?91779125#checkmate') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: 'checkmate';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+  content: '\e804';
+}
+
+/* ==========================================================================
+   Checkmate
+   ========================================================================== */
+
+.checkmate {
+  position: relative;
+}
+
+.checkmate input {
+  background: #FFF;
+  border: 1px solid #AAA;
+  border-radius: 3px;
+  color: #444;
+  font-size: 18px;
+  line-height: 18px;
+  height: 36px;
+  padding: 8px 44px 8px 10px;
+  width: 100%;
+  -webkit-transition: border 250ms ease-out;
+  -moz-transition: border 250ms ease-out;
+  transition: border 250ms ease-out;
+}
+
+.checkmate input:focus {
+  border-color: #444;
+  outline: 0;
+}
+
+.checkmate:after {
+  background: #49C46F;
+  border-radius: 50%;
+  color: #FFF;
+  content: "\e804";
+  font-family: 'checkmate';
+  font-size: 18px;
+  line-height: 18px;
+  opacity: 0;
+  padding-top: 5px;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  -webkit-transition: opacity 150ms ease-out;
+  -moz-transition: opacity 150ms ease-out;
+  transition: opacity 150ms ease-out;
+}
+
+.checkmate.valid:after {
+  opacity: 1;
+}
+
+.checkmate input::-webkit-input-placeholder {
+  line-height: normal;
+}
+
+.checkmate input:-moz-placeholder {
+  line-height: normal;
+}
+
+.checkmate input::-moz-placeholder {
+  line-height: normal;
+}
+
+.checkmate input:-ms-input-placeholder {
+  line-height: normal;
+}
+
+.checkmate input::-ms-input-placeholder {
+  line-height: normal;
+}

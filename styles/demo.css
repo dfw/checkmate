@@ -1,0 +1,92 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+  font-family: 'equiplight';
+  src: url('../fonts/EquipLig-webfont.eot');
+  src: url('../fonts/EquipLig-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/EquipLig-webfont.woff2') format('woff2'),
+       url('../fonts/EquipLig-webfont.woff') format('woff'),
+       url('../fonts/EquipLig-webfont.ttf') format('truetype'),
+       url('../fonts/EquipLig-webfont.svg#equiplight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   Checkmate Demo
+   ========================================================================== */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('../images/fabric_of_squares_gray.png') repeat 0 0;
+  color: #444;
+  font-family: 'equiplight', sans-serif;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 30px;
+  text-align: center;
+  margin: 0;
+  padding: 30px 15px 60px;
+  position: relative;
+}
+
+h1:after {
+  background: #49C46F;
+  border-radius: 50%;
+  color: #FFF;
+  content: "\e804";
+  display: inline-block;
+  font-family: 'checkmate';
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 10px;
+  opacity: 0;
+  padding-top: 5px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  -webkit-transition: opacity 300ms ease-out;
+  -moz-transition: opacity 300ms ease-out;
+  transition: opacity 300ms ease-out;
+}
+
+h1.check:after {
+  opacity: 1;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 0 15px 15px;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-size: 18px;
+  line-height: 18px;
+  margin-bottom: 10px;
+}
